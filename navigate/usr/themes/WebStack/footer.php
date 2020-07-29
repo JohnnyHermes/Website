@@ -71,7 +71,6 @@ $check_host = 'http://tool.sq.zmki.cn/update.php';$client_check = $check_host . 
 					                    }show_date_time();</script> 
 					                     <?php endif; ?> 
                     <!--站点运行时间结束-->
-                    </div>
                 </div>
             </footer>
         </div>
