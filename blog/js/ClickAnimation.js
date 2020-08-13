@@ -93,3 +93,7 @@ if(document.getElementById("clickCanvas")) {
         }();
     });
 }
+var canvas = document.createElement(‘div’);
+canvas.setAttribute(‘style’, ‘position: fixed;left: 0;top: 0;z-index: 999999999;pointer-events: none;’);
+canvas.setAttribute(‘id’, ‘clickCanvas’);
+document.getElementsByTagName(‘body’)[0].appendChild(canvas);
