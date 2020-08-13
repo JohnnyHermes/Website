@@ -92,8 +92,4 @@ if(document.getElementById("clickCanvas")) {
             clickparticle.spawn(e.clientX, e.clientY);
         }();
     });
-}
-var canvas1 = document.createElement(‘div’);
-canvas1.setAttribute(‘style’, ‘position: fixed;left: 0;top: 0;z-index: 999999999;pointer-events: none;’);
-canvas1.setAttribute(‘id’, ‘clickCanvas’);
-document.getElementsByTagName(‘body’)[0].appendChild(canvas);
+)
