@@ -92,4 +92,4 @@ if(document.getElementById("clickCanvas")) {
             clickparticle.spawn(e.clientX, e.clientY);
         }();
     });
-)
+}
