@@ -1,0 +1,183 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+.loading{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.bgcover{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+.tcontainer{
+    position: fixed;
+    left: center;
+    top: 62%;
+    width:100%;
+    margin: auto;
+}
+p.text2{  
+    font-size: 12px;
+    position: relative;
+    left:55%;
+    color:rgb(210,53,125);
+}
+p.text3{  
+    position: fixed;
+    top: 83%;
+    font-size:20px;
+    width:300px;
+    margin: 0 auto;
+    text-align: center;
+    color:#7E07a9;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid #eee;
+}
+p.ani{
+    animation: grow 4s steps(45) 1s normal both,
+        blink 0.5s steps(10) infinite normal;
+}
+p.text1{
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    color:rgb(210,53,125);
+    text-shadow:5px 10px 5px #fdcbf1;
+}
+.cell{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background:red;
+    margin-right:20px;
+}
+.cell:nth-child(1){
+    background-color: #FF98C5;
+    animation: love1 4s 0s infinite;
+}
+.cell:nth-child(2){
+    background-color: #E667AF;
+    animation: love2 4s 0.15s infinite;
+}
+.cell:nth-child(3){
+    background-color: #E6399B;
+    animation: love3 4s 0.3s infinite;
+}
+.cell:nth-child(4){
+    background-color: deeppink;
+    animation: love4 4s 0.45s infinite;
+}
+.cell:nth-child(5){
+    background-color: #CD0074;
+    animation: love5 4s 0.6s infinite;
+}
+.cell:nth-child(6){
+    background-color: deeppink;
+    animation: love4 4s 0.75s infinite;
+}
+.cell:nth-child(7){
+    background-color: #E6399B;
+    animation: love3 4s 0.9s infinite;
+}
+.cell:nth-child(8){
+    background-color: #E667AF;
+    animation: love2 4s 1.05s infinite;
+}
+.cell:nth-child(9){
+    background-color: #FF98C5;
+    animation: love1 4s 1.2s infinite;
+}
+@keyframes love1{
+    30%,50%{
+        height: 60px;
+        transform: translateY(-90px);
+    }
+    70%,100%{
+        height: 20px;
+        transform: translateY(0px);
+    }
+}
+@keyframes love2{
+    30%,50%{
+        height: 132px;
+        transform: translateY(-83px);
+    }
+    70%,100%{
+        height: 20px;
+        transform: translateY(0px);
+    }
+}
+@keyframes love3{
+    30%,50%{
+        height: 173px;
+        transform: translateY(-63px);
+    }
+    70%,100%{
+        height: 20px;
+        transform: translateY(0px);
+    }
+}
+@keyframes love4{
+    30%,50%{
+        height: 194px;
+        transform: translateY(-40px);
+    }
+    70%,100%{
+        height: 20px;
+        transform: translateY(0px);
+    }
+}
+@keyframes love5{
+    30%,50%{
+        height: 200px;
+        transform: translateY(0px);
+    }
+    70%,100%{
+        height: 20px;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes grow{
+    from{
+        width:0;
+    }
+    to{
+        width:270px;
+    }
+}
+@keyframes blink{
+    from{
+        border-right-color: #eee;
+    }
+    to{
+        border-right-color: #7E07a9;
+    }
+}
+
