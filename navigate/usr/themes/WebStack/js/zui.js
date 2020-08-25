@@ -4157,7 +4157,6 @@
      * @example imgReady('image.png'/*tpa=https://www.webjike.com/dist/js/image.png*/ (function () {
         alert('size ready: width=' + this.width + '; height=' + this.height);
       });
-     */
     $.zui.imgReady = (function() {
         var list = [],
             intervalId = null,
